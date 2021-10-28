@@ -26,6 +26,8 @@ factories:
      - smelt_stone
      - smelt_smooth_stone
      - smelt_cracked_stone_bricks
+     - synth_tnt
+     - synth_tnt_red
      - smelt_glass
      - smelt_glass_red
      - smelt_netherrack
@@ -1187,6 +1189,36 @@ recipes:
         material: ANCIENT_DEBRIS
         amount: 32
     factory: Advanced Ore Smelter
+  synth_tnt:
+    type: PRODUCTION
+    production_time: 8s
+    name: Synthesize TNT
+    input:
+      sand:
+        material: SAND
+        amount: 256
+      gunpowder:
+        material: GUNPOWDER
+        amount: 64
+    output:
+      tnt:
+        material: TNT
+        amount: 64
+  synth_red:
+    type: PRODUCTION
+    production_time: 8s
+    name: Synthesize TNT
+    input:
+      sand:
+        material: RED_SAND
+        amount: 256
+      gunpowder:
+        material: GUNPOWDER
+        amount: 64
+    output:
+      tnt:
+        material: TNT
+        amount: 64
   smelt_glass:
     type: PRODUCTION
     production_time: 4s
